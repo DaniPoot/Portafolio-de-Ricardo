@@ -407,6 +407,15 @@ textarea {
 }
 
 @media screen and (min-width: 700px) {
+  :root {
+  --title-1: normal 800 7.2rem/8rem Epilogue;
+  --title-3: normal 800 5.6rem/6.4rem Epilogue;
+  --title-4: normal 800 4rem/4.8rem Epilogue;
+  --title-5-1: normal 800 2.4rem/3.2rem Epilogue;
+  --label: normal 700 1.2rem/1.23rem Epilogue;
+  --input: var(--title-5);
+  }
+
   .header-main {
     justify-content: normal;
   }
@@ -447,16 +456,36 @@ textarea {
     max-width: 15.4rem;
   }
 
+  .testimonies-content .title-5 ~ .title-4 {
+    font: var(--title-3);
+  }
+
+  .testimonies {
+    justify-content: center;
+  }
+
+  .testimony .title-4 {
+    font: var(--title-5-1);
+  }
+
   .contact-main-info {
     max-width: 47rem;
     margin-left: auto;
     margin-right: auto;
   }
 
+  .contact-main-info .title-5 ~ .title-3 {
+    font: var(--title-4);
+  }
+
   .form {
     max-width: 57rem;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .form .title-4 {
+    font: var(--title-5-1);
   }
 
   .footer-content {
